@@ -37,18 +37,20 @@
                         android:layout_marginRight="@dimen/dp_3"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@mipmap/neu_card1" />
+                        app:srcCompat="@mipmap/neu_card1"
+                        tools:ignore="ContentDescription" />
 
                     <ImageView
                         android:id="@+id/about"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dp_28"
                         android:layout_alignTop="@id/Title"
-                        android:layout_alignRight="@id/Title"
+                        android:layout_alignEnd="@id/Title"
                         android:layout_marginTop="@dimen/dp_2"
-                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_8"
                         android:visibility="gone"
-                        app:srcCompat="@mipmap/neu_about" />
+                        app:srcCompat="@mipmap/neu_about"
+                        tools:ignore="ContentDescription" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -60,10 +62,10 @@
                         android:id="@+id/muchCK"
                         android:layout_width="@dimen/dp_165"
                         android:layout_height="@dimen/dp_120"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_0"
+                        android:layout_marginEnd="@dimen/dp_0"
                         android:background="@drawable/neu_background_card_down_bac"
                         android:gravity="center"
                         android:stateListAnimator="@null"
@@ -73,24 +75,26 @@
                         android:textColor="@color/neu_text_color"
                         android:textSize="@dimen/dp_16"
                         android:textStyle="normal|bold"
-                        android:typeface="serif" />
+                        android:typeface="serif"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dp_42"
-                        android:layout_alignLeft="@id/muchCK"
+                        android:layout_alignStart="@id/muchCK"
                         android:layout_alignTop="@id/muchCK"
-                        android:layout_alignRight="@id/muchCK"
+                        android:layout_alignEnd="@id/muchCK"
                         android:layout_marginTop="@dimen/dp_30"
-                        app:srcCompat="@mipmap/neu_my" />
+                        app:srcCompat="@mipmap/neu_my"
+                        tools:ignore="ContentDescription" />
 
                     <Button
                         android:id="@+id/loginJd"
                         android:layout_width="@dimen/dp_165"
                         android:layout_height="@dimen/dp_120"
-                        android:layout_marginLeft="@dimen/dp_186"
+                        android:layout_marginStart="@dimen/dp_186"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
                         android:background="@drawable/neu_background_card_down_bac"
                         android:gravity="center"
                         android:stateListAnimator="@null"
@@ -101,7 +105,8 @@
                         android:textSize="@dimen/dp_16"
                         android:textStyle="bold"
                         android:typeface="serif"
-                        android:visibility="visible" />
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -112,7 +117,8 @@
                         android:layout_alignEnd="@id/loginJd"
                         android:layout_marginTop="@dimen/dp_32"
                         android:layoutDirection="ltr"
-                        app:srcCompat="@mipmap/neu_ck" />
+                        app:srcCompat="@mipmap/neu_ck"
+                        tools:ignore="ContentDescription" />
 
                 </RelativeLayout>
 
@@ -138,19 +144,21 @@
                         android:textSize="@dimen/dp_16"
                         android:textStyle="bold"
                         android:typeface="serif"
-                        android:visibility="visible" />
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText,SpUsage" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dp_31"
                         android:layout_alignWithParentIfMissing="false"
-                        android:layout_alignLeft="@id/setting"
+                        android:layout_alignStart="@id/setting"
                         android:layout_alignTop="@id/setting"
-                        android:layout_alignRight="@id/setting"
+                        android:layout_alignEnd="@id/setting"
                         android:layout_centerInParent="true"
                         android:layout_marginTop="@dimen/dp_34"
                         android:layoutDirection="ltr"
-                        app:srcCompat="@mipmap/neu_set" />
+                        app:srcCompat="@mipmap/neu_set"
+                        tools:ignore="ContentDescription" />
 
                 </RelativeLayout>
 
@@ -176,7 +184,8 @@
             android:text="GitHub：WhiteFan"
             android:textAlignment="center"
             android:textColor="@color/huise"
-            android:textSize="@dimen/dp_10" />
+            android:textSize="@dimen/dp_10"
+            tools:ignore="HardcodedText,SpUsage" />
     </RelativeLayout>
 
 

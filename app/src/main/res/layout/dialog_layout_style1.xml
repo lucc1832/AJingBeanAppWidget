@@ -15,7 +15,8 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:visibility="gone"
-        app:srcCompat="@mipmap/update" />
+        app:srcCompat="@mipmap/update"
+        tools:ignore="ContentDescription" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,7 +31,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_25_dialog"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
 
                 <LinearLayout
@@ -51,7 +53,8 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="@color/qianblack"
                         android:textSize="@dimen/dp_19"
-                        android:textStyle="bold|italic" />
+                        android:textStyle="bold|italic"
+                        tools:ignore="RtlHardcoded,SpUsage" />
 
                     <View
                         android:id="@+id/title_zhanwei"
@@ -71,14 +74,16 @@
                         android:paddingTop="@dimen/dp_18"
                         android:paddingBottom="@dimen/dp_20"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/dp_15" />
+                        android:textSize="@dimen/dp_15"
+                        tools:ignore="RtlHardcoded,SpUsage" />
 
                 </LinearLayout>
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="2px"
-                    android:background="#ffefefef" />
+                    android:background="#ffefefef"
+                    tools:ignore="PxUsage" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -98,11 +103,12 @@
                         android:singleLine="true"
                         android:textColor="@color/yellow1"
                         android:textSize="@dimen/dp_17"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        tools:ignore="KeyboardInaccessibleWidget,SpUsage" />
 
                     <View
                         android:id="@+id/view_line"
-                        android:layout_width="2px"
+                        android:layout_width="2dp"
                         android:layout_height="match_parent"
                         android:background="#ffefefef" />
 
@@ -118,7 +124,9 @@
                         android:singleLine="true"
                         android:text="确定"
                         android:textColor="@color/yellow1"
-                        android:textSize="@dimen/dp_17" />
+                        android:textSize="@dimen/dp_17"
+                        android:focusable="true"
+                        tools:ignore="HardcodedText,SpUsage" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

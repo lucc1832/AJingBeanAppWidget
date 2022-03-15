@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="@dimen/dp_10"
@@ -16,7 +17,8 @@
         android:layout_marginTop="@dimen/dp_30"
         android:layout_marginRight="@dimen/dp_10"
         android:layout_marginBottom="@dimen/dp_30"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -27,7 +29,8 @@
             android:layout_marginTop="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_18"
             android:layout_marginBottom="@dimen/dp_10"
-            android:background="@drawable/shape_text_frame">
+            android:background="@drawable/shape_text_frame"
+            tools:ignore="ObsoleteLayoutParam">
 
             <EditText
                 android:id="@+id/inputColor"
@@ -40,7 +43,9 @@
                 android:background="@null"
                 android:hint="请输入颜色16进制值"
                 android:textColor="@color/black"
-                android:textColorHint="@color/huise"/>
+                android:textColorHint="@color/huise"
+                android:autofillHints=""
+                tools:ignore="HardcodedText,TextFields" />
         </RelativeLayout>
 
         <Button
@@ -53,7 +58,8 @@
             android:background="@drawable/background_count_down_bac"
             android:text="确定"
             android:textColor="@color/white"
-            android:textSize="@dimen/dp_16" />
+            android:textSize="@dimen/dp_16"
+            tools:ignore="HardcodedText,SpUsage" />
 
     </LinearLayout>
 

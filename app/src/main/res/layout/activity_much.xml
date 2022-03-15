@@ -22,9 +22,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/dp_8"
-                android:layout_marginRight="@dimen/dp_10"
-                android:orientation="vertical">
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
 
                 <Space
@@ -34,15 +35,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_50"
-                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <Button
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/dp_18"
-                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_18"
+                        android:layout_marginEnd="@dimen/dp_8"
                         android:layout_weight="1"
                         android:background="@drawable/background_notice_down_bac"
                         android:gravity="center|center_horizontal|center_vertical"
@@ -52,53 +53,57 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/dp_11"
                         android:textStyle="bold"
-                        android:typeface="serif" />
+                        android:typeface="serif"
+                        tools:ignore="ButtonStyle,HardcodedText,NestedWeights,SpUsage" />
 
                     <Button
                         android:id="@+id/pushloadCk"
                         android:layout_width="@dimen/dp_76"
                         android:layout_height="@dimen/dp_30"
-                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginStart="@dimen/dp_2"
                         android:layout_marginTop="@dimen/dp_6"
-                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_marginEnd="@dimen/dp_5"
                         android:background="@drawable/background_count_down_bac"
                         android:text="资产查询"
                         android:textColor="@color/white"
                         android:textSize="@dimen/dp_12"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        tools:ignore="ButtonStyle,HardcodedText,SpUsage" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_120"
-                    android:layout_alignParentLeft="true"
                     android:layout_marginLeft="@dimen/dp_2"
                     android:layout_marginTop="@dimen/dp_8"
                     android:layout_marginRight="@dimen/dp_2"
                     android:layout_weight="1"
                     android:background="@drawable/neu_background_card_down_bac"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_8"
                         android:layout_marginBottom="@dimen/dp_10"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_2"
                             android:fontFamily="@font/tencent"
                             android:text="账号1"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dp_20" />
+                            android:textSize="@dimen/dp_20"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <TextView
                             android:id="@+id/inputCK0"
@@ -110,7 +115,8 @@
                             android:layout_marginBottom="@dimen/dp_0"
                             android:background="@null"
                             android:text="请输入Cookie"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -118,8 +124,8 @@
                         android:layout_width="@dimen/dp_200"
                         android:layout_height="match_parent"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_16"
-                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:layout_marginStart="@dimen/dp_8"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -127,13 +133,14 @@
                             android:id="@+id/updateCK"
                             android:layout_width="@dimen/dp_86"
                             android:layout_height="@dimen/dp_26"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_1"
-                            android:layout_marginRight="@dimen/dp_1"
+                            android:layout_marginEnd="@dimen/dp_1"
                             android:background="@drawable/background_count_down_bac"
                             android:text="更新CK1状态"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/dp_12" />
+                            android:textSize="@dimen/dp_12"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                     </LinearLayout>
 
@@ -142,33 +149,37 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_120"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_marginLeft="@dimen/dp_2"
                     android:layout_marginTop="@dimen/dp_8"
                     android:layout_marginRight="@dimen/dp_2"
                     android:layout_weight="1"
                     android:background="@drawable/neu_background_card_down_bac"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    tools:ignore="ObsoleteLayoutParam">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_8"
                         android:layout_marginBottom="@dimen/dp_10"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_2"
                             android:fontFamily="@font/tencent"
                             android:text="账号2"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dp_20" />
+                            android:textSize="@dimen/dp_20"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <TextView
                             android:id="@+id/inputCK1"
@@ -180,7 +191,8 @@
                             android:layout_marginBottom="@dimen/dp_0"
                             android:background="@null"
                             android:text="请输入Cookie"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -188,8 +200,8 @@
                         android:layout_width="@dimen/dp_200"
                         android:layout_height="match_parent"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_16"
-                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:layout_marginStart="@dimen/dp_8"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -197,59 +209,63 @@
                             android:id="@+id/updateCK1"
                             android:layout_width="@dimen/dp_86"
                             android:layout_height="@dimen/dp_26"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_1"
-                            android:layout_marginRight="@dimen/dp_1"
+                            android:layout_marginEnd="@dimen/dp_1"
                             android:background="@drawable/background_count_down_bac"
                             android:text="更新CK2状态"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/dp_12" />
+                            android:textSize="@dimen/dp_12"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <Button
                             android:id="@+id/pushloadCk1"
                             android:layout_width="@dimen/dp_86"
                             android:layout_height="@dimen/dp_26"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_8"
-                            android:layout_marginRight="@dimen/dp_1"
+                            android:layout_marginEnd="@dimen/dp_1"
                             android:background="@drawable/background_count_down_bac"
                             android:text="资产查询"
                             android:textColor="@color/white"
                             android:textSize="@dimen/dp_12"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText,SpUsage" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_120"
-                    android:layout_alignParentLeft="true"
                     android:layout_marginLeft="@dimen/dp_2"
                     android:layout_marginTop="@dimen/dp_8"
                     android:layout_marginRight="@dimen/dp_2"
                     android:layout_weight="1"
                     android:background="@drawable/neu_background_card_down_bac"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_8"
                         android:layout_marginBottom="@dimen/dp_10"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_2"
                             android:fontFamily="@font/tencent"
                             android:text="账号3"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dp_20" />
+                            android:textSize="@dimen/dp_20"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <TextView
                             android:id="@+id/inputCK2"
@@ -261,16 +277,17 @@
                             android:layout_marginBottom="@dimen/dp_0"
                             android:background="@null"
                             android:text="请输入Cookie"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="@dimen/dp_200"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_8"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_16"
+                        android:layout_marginEnd="@dimen/dp_16"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
@@ -278,33 +295,34 @@
                             android:id="@+id/updateCK2"
                             android:layout_width="@dimen/dp_86"
                             android:layout_height="@dimen/dp_26"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_1"
-                            android:layout_marginRight="@dimen/dp_1"
+                            android:layout_marginEnd="@dimen/dp_1"
                             android:background="@drawable/background_count_down_bac"
                             android:text="更新CK3状态"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/dp_12" />
+                            android:textSize="@dimen/dp_12"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <Button
                             android:id="@+id/pushloadCk2"
                             android:layout_width="@dimen/dp_86"
                             android:layout_height="@dimen/dp_26"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_8"
-                            android:layout_marginRight="@dimen/dp_1"
+                            android:layout_marginEnd="@dimen/dp_1"
                             android:background="@drawable/background_count_down_bac"
                             android:text="资产查询"
                             android:textColor="@color/white"
                             android:textSize="@dimen/dp_12"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText,SpUsage" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_120"
-                    android:layout_alignParentLeft="true"
                     android:layout_marginLeft="@dimen/dp_2"
                     android:layout_marginTop="@dimen/dp_8"
                     android:layout_marginRight="@dimen/dp_2"
@@ -313,25 +331,27 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_8"
                         android:layout_marginBottom="@dimen/dp_10"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights">
 
                         <TextView
                             android:id="@+id/textView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_2"
                             android:fontFamily="@font/tencent"
                             android:text="账号4"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dp_20" />
+                            android:textSize="@dimen/dp_20"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <TextView
                             android:id="@+id/inputCK3"
@@ -343,7 +363,8 @@
                             android:layout_marginBottom="@dimen/dp_0"
                             android:background="@null"
                             android:text="请输入Cookie"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -351,45 +372,49 @@
                         android:id="@+id/updateCK3"
                         android:layout_width="@dimen/dp_90"
                         android:layout_height="@dimen/dp_26"
-                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginStart="@dimen/dp_8"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_marginEnd="@dimen/dp_12"
                         android:background="@drawable/background_count_down_bac"
                         android:text="更新CK4状态"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/dp_12" />
+                        android:textSize="@dimen/dp_12"
+                        tools:ignore="HardcodedText,SpUsage" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_120"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_marginLeft="@dimen/dp_2"
                     android:layout_marginTop="@dimen/dp_8"
                     android:layout_marginRight="@dimen/dp_2"
                     android:layout_weight="1"
                     android:background="@drawable/neu_background_card_down_bac"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="ObsoleteLayoutParam">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_8"
                         android:layout_marginBottom="@dimen/dp_12"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_2"
                             android:fontFamily="@font/tencent"
                             android:text="账号5"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dp_20" />
+                            android:textSize="@dimen/dp_20"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <TextView
                             android:id="@+id/inputCK4"
@@ -401,7 +426,8 @@
                             android:layout_marginBottom="@dimen/dp_0"
                             android:background="@null"
                             android:text="请输入Cookie"
-                            android:textColor="@color/black" />
+                            android:textColor="@color/black"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -409,45 +435,49 @@
                         android:id="@+id/updateCK4"
                         android:layout_width="@dimen/dp_90"
                         android:layout_height="@dimen/dp_26"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_marginEnd="@dimen/dp_12"
                         android:background="@drawable/background_count_down_bac"
                         android:text="更新CK5状态"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/dp_12" />
+                        android:textSize="@dimen/dp_12"
+                        tools:ignore="HardcodedText,SpUsage" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_120"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_marginLeft="@dimen/dp_2"
                     android:layout_marginTop="@dimen/dp_8"
                     android:layout_marginRight="@dimen/dp_2"
                     android:layout_weight="1"
                     android:background="@drawable/neu_background_card_down_bac"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="ObsoleteLayoutParam">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_8"
                         android:layout_marginBottom="@dimen/dp_12"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/dp_2"
+                            android:layout_marginStart="@dimen/dp_2"
                             android:layout_marginTop="@dimen/dp_2"
                             android:fontFamily="@font/tencent"
                             android:text="账号6"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dp_20" />
+                            android:textSize="@dimen/dp_20"
+                            tools:ignore="HardcodedText,SpUsage" />
 
                         <TextView
                             android:id="@+id/inputCK5"
@@ -460,7 +490,8 @@
                             android:background="@null"
                             android:text="请输入Cookie"
                             android:textColor="@color/black"
-                            tools:text="请输入Cookie" />
+                            tools:text="请输入Cookie"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -468,13 +499,14 @@
                         android:id="@+id/updateCK5"
                         android:layout_width="@dimen/dp_90"
                         android:layout_height="@dimen/dp_26"
-                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_marginEnd="@dimen/dp_12"
                         android:background="@drawable/background_count_down_bac"
                         android:text="更新CK6状态"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/dp_12" />
+                        android:textSize="@dimen/dp_12"
+                        tools:ignore="HardcodedText,SpUsage" />
                 </LinearLayout>
 
                 <Space
@@ -487,7 +519,8 @@
                     android:layout_marginBottom="@dimen/dp_10"
                     android:layout_weight="1"
                     android:orientation="horizontal"
-                    android:visibility="gone">
+                    android:visibility="gone"
+                    tools:ignore="UselessLeaf">
 
                 </LinearLayout>
             </LinearLayout>

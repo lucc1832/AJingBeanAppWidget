@@ -28,7 +28,8 @@
             android:text="GitHub：WhiteFan"
             android:textAlignment="center"
             android:textColor="@color/huise"
-            android:textSize="@dimen/dp_10" />
+            android:textSize="@dimen/dp_10"
+            tools:ignore="HardcodedText,SpUsage" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +48,8 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@mipmap/neu_card1" />
+                    app:srcCompat="@mipmap/neu_card1"
+                    android:contentDescription="TODO" />
 
                 <ImageView
                     android:id="@+id/about"
