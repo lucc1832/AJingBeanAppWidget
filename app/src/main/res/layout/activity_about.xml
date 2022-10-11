@@ -84,9 +84,9 @@
                         android:background="@drawable/background_count_down_bac"
                         android:fontFamily="@font/tencent"
                         android:text="V1.0"
-                        android:textColor="@color/white"
+                        android:textColor="#827717"
                         android:textSize="@dimen/dp_14"
-                        tools:ignore="HardcodedText,SpUsage" />
+                        tools:ignore="HardcodedText,SpUsage,TouchTargetSizeCheck" />
 
                 </LinearLayout>
 
@@ -141,10 +141,10 @@
                         android:layout_marginEnd="@dimen/dp_10"
                         android:background="@drawable/background_count_down_bac"
                         android:fontFamily="@font/tencent"
-                        android:text="WhiteFan"
-                        android:textColor="@color/white"
+                        android:text="Lucc"
+                        android:textColor="#827717"
                         android:textSize="@dimen/dp_11"
-                        tools:ignore="HardcodedText,SpUsage" />
+                        tools:ignore="HardcodedText,SpUsage,TouchTargetSizeCheck" />
                 </LinearLayout>
 
                 <TextView
@@ -155,7 +155,7 @@
                     android:layout_marginTop="@dimen/dp_2"
                     android:layout_marginRight="@dimen/dp_15"
                     android:layout_weight="1"
-                    android:text="作者：WhiteFan"
+                    android:text="作者：Lucc"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dp_13"
                     android:visibility="gone"
@@ -192,9 +192,9 @@
                         android:background="@drawable/background_count_down_bac"
                         android:fontFamily="@font/tencent"
                         android:text="GitHub"
-                        android:textColor="@color/white"
+                        android:textColor="#827717"
                         android:textSize="@dimen/dp_11"
-                        tools:ignore="HardcodedText,SpUsage" />
+                        tools:ignore="HardcodedText,SpUsage,TouchTargetSizeCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -228,10 +228,10 @@
                         android:layout_weight="1"
                         android:background="@drawable/background_count_down_bac"
                         android:fontFamily="@font/tencent"
-                        android:text="939958404"
-                        android:textColor="@color/white"
+                        android:text="972275078"
+                        android:textColor="#827717"
                         android:textSize="@dimen/dp_11"
-                        tools:ignore="HardcodedText,SpUsage" />
+                        tools:ignore="HardcodedText,SpUsage,TouchTargetSizeCheck" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -338,7 +338,6 @@
                     tools:ignore="HardcodedText,SpUsage" />
 
             </LinearLayout>
-
 
         </LinearLayout>
     </ScrollView>

@@ -9,7 +9,7 @@
     <!--标题栏-->
     <include layout="@layout/include_title" />
 
-    <com.whitefan.jdlite.webView.MarqueeTextView
+    <com.lucc.jdlite.webView.MarqueeTextView
         android:id="@+id/tips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,12 +24,12 @@
         android:visibility="gone"
         tools:ignore="HardcodedText" />
 
-    <com.whitefan.jdlite.webView.CommonWebView
+    <com.lucc.jdlite.webView.CommonWebView
         android:id="@+id/mCommonWebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-    </com.whitefan.jdlite.webView.CommonWebView>
+    </com.lucc.jdlite.webView.CommonWebView>
 
     <TextView
         android:id="@+id/sendCK"

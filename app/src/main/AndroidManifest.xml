@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.whitefan.jdlite">
+    package="com.lucc.jdlite">
 
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.VIBRATE"/><!--震动权限-->
     <!--        用于震动-->
     <application
-        android:name="com.whitefan.jdlite.MyApplication"
+        android:name="com.lucc.jdlite.MyApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name="com.whitefan.jdlite.MainActivity"
+            android:name="com.lucc.jdlite.MainActivity"
             android:exported="true"
             android:launchMode="singleTask">
             <intent-filter>
@@ -31,18 +31,18 @@
         </activity>
 
 
-        <activity android:name="com.whitefan.jdlite.activity.SettingActivity" />
+        <activity android:name="com.lucc.jdlite.activity.SettingActivity" />
 
-        <activity android:name="com.whitefan.jdlite.activity.MuchCkActivity" />
+        <activity android:name="com.lucc.jdlite.activity.MuchCkActivity" />
 
-        <activity android:name="com.whitefan.jdlite.activity.MyWebActivity" />
+        <activity android:name="com.lucc.jdlite.activity.MyWebActivity" />
 
 
-        <activity android:name="com.whitefan.jdlite.activity.AboutActivity" />
+        <activity android:name="com.lucc.jdlite.activity.AboutActivity" />
 
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider"
             android:label="帐号1 4*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -54,7 +54,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider_2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider_2"
             android:label="帐号1 2*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -66,7 +66,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider1"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider1"
             android:label="帐号2 4*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -78,7 +78,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider1_2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider1_2"
             android:label="帐号2 2*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -90,7 +90,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider2"
             android:label="帐号3 4*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -102,7 +102,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider2_2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider2_2"
             android:label="帐号3 2*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -114,7 +114,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider3"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider3"
             android:label="帐号4 4*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -126,7 +126,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider3_2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider3_2"
             android:label="帐号4 2*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -138,7 +138,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider4"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider4"
             android:label="帐号5 4*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -150,7 +150,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider4_2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider4_2"
             android:label="帐号5 2*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -162,7 +162,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider5"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider5"
             android:label="帐号6 4*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -174,7 +174,7 @@
         </receiver>
 
         <receiver
-            android:name="com.whitefan.jdlite.widget.MyAppWidgetProvider5_2"
+            android:name="com.lucc.jdlite.widget.MyAppWidgetProvider5_2"
             android:label="帐号6 2*2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -184,7 +184,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info2" />
         </receiver>
-         <service android:name="com.whitefan.jdlite.widget.UpdateDataService" />
+         <service android:name="com.lucc.jdlite.widget.UpdateDataService" />
     </application>
 
 </manifest>
