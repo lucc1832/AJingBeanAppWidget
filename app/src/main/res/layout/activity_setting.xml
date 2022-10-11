@@ -301,6 +301,28 @@
                             android:thumb="@drawable/switch_thumb"
                             android:track="@drawable/switch_track"
                             tools:ignore="HardcodedText,SpUsage,UseSwitchCompatOrMaterialXml" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+
+                            android:background="@drawable/neu_background_card_down_bac"
+                            android:orientation="vertical"
+                            tools:ignore="ObsoleteLayoutParam">
+
+                            <Button
+                                android:id="@+id/btn1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="#0000"
+                                android:fontFamily="@font/tencent"
+                                android:text="更新"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                        </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>

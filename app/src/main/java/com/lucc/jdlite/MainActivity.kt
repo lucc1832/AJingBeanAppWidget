@@ -192,6 +192,14 @@ class MainActivity : BaseActivity() {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }
+        ql.setOnClickListener {
+            val intent = Intent(this, MyWebActivity::class.java)
+            intent.putExtra("url", "lucc.work")
+            intent.putExtra("title", "青龙")
+            startActivity(intent)
+            val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
+            vibrator.vibrate(10)
+        }
     }
 
 

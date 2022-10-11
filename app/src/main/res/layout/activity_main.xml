@@ -159,7 +159,38 @@
                         android:layoutDirection="ltr"
                         app:srcCompat="@mipmap/neu_set"
                         tools:ignore="ContentDescription" />
+                    <Button
+                        android:id="@+id/ql"
+                        android:layout_width="@dimen/dp_165"
+                        android:layout_height="@dimen/dp_120"
+                        android:layout_marginStart="@dimen/dp_186"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:background="@drawable/neu_background_card_down_bac"
+                        android:gravity="center"
+                        android:stateListAnimator="@null"
+                        android:text="\n\n提交挂豆"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/neu_text_color"
+                        android:textSize="@dimen/dp_16"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText,SpUsage" />
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_31"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:layout_alignStart="@id/ql"
+                        android:layout_alignTop="@id/ql"
+                        android:layout_alignEnd="@id/ql"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/dp_34"
+                        android:layoutDirection="ltr"
+                        app:srcCompat="@mipmap/qinglong"
+                        tools:ignore="ContentDescription" />
                 </RelativeLayout>
 
                 <Space
@@ -181,9 +212,9 @@
             android:layout_marginRight="@dimen/dp_25"
             android:layout_marginBottom="@dimen/dp_20"
             android:fontFamily="@font/tencent"
-            android:text="GitHub：WhiteFan"
+            android:text="私有签到框架：懒人一键"
             android:textAlignment="center"
-            android:textColor="@color/huise"
+            android:textColor="#546E7A"
             android:textSize="@dimen/dp_10"
             tools:ignore="HardcodedText,SpUsage" />
     </RelativeLayout>
