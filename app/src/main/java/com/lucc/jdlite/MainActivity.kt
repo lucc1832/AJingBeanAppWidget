@@ -172,8 +172,8 @@ class MainActivity : BaseActivity() {
 
         githublj.setOnClickListener {
             val intent = Intent(this, MyWebActivity::class.java)
-            intent.putExtra("url", "https://github.com/baifan97/JingBeanAppWidget")
-            intent.putExtra("title", "京豆小部件——GitHub")
+            intent.putExtra("url", "http://101.33.239.32:1000/register")
+            intent.putExtra("title", "签到界面")
             startActivity(intent)
             val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibrator.vibrate(10)
