@@ -76,14 +76,14 @@
 
                     <Button
 
-                        android:layout_width="@dimen/dp_60"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/dp_26"
                         android:layout_marginStart="@dimen/dp_25"
                         android:layout_marginTop="@dimen/dp_0"
                         android:layout_marginEnd="@dimen/dp_10"
                         android:background="@drawable/background_count_down_bac"
                         android:fontFamily="@font/tencent"
-                        android:text="V1.0"
+                        android:text="V1.1.3"
                         android:textColor="#827717"
                         android:textSize="@dimen/dp_14"
                         tools:ignore="HardcodedText,SpUsage,TouchTargetSizeCheck" />
@@ -127,7 +127,7 @@
                         android:layout_marginTop="@dimen/dp_0"
                         android:layout_marginEnd="@dimen/dp_2"
                         android:layout_weight="1"
-                        android:text="作者："
+                        android:text="博主："
                         android:textColor="@color/black"
                         android:textSize="@dimen/dp_13"
                         tools:ignore="HardcodedText,SpUsage" />
@@ -175,7 +175,7 @@
                         android:layout_marginTop="@dimen/dp_0"
                         android:layout_marginEnd="@dimen/dp_2"
                         android:layout_weight="1"
-                        android:text="开源地址："
+                        android:text="博主QQ："
                         android:textColor="@color/black"
                         android:textSize="@dimen/dp_13"
                         tools:ignore="HardcodedText,SpUsage" />
@@ -183,7 +183,7 @@
                     <Button
 
                         android:id="@+id/github"
-                        android:layout_width="@dimen/dp_60"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/dp_20"
                         android:layout_marginStart="@dimen/dp_2"
                         android:layout_marginTop="@dimen/dp_0"
@@ -191,7 +191,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/background_count_down_bac"
                         android:fontFamily="@font/tencent"
-                        android:text="GitHub"
+                        android:text="1832649614"
                         android:textColor="#827717"
                         android:textSize="@dimen/dp_11"
                         tools:ignore="HardcodedText,SpUsage,TouchTargetSizeCheck" />
@@ -355,7 +355,7 @@
                     android:gravity="center"
                     android:background="#0000"
                     android:fontFamily="@font/tencent"
-                    android:text="需要更新的点击首页京东图片进行下载"
+                    android:text="更新应用版本"
                     android:textColor="@color/black"
                     android:textSize="17sp" />
 

@@ -216,14 +216,15 @@ class MainActivity : BaseActivity() {
             val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
             vibrator.vibrate(10)
         }
-        Title.setOnClickListener {
-            val intent = Intent(this, MyWebActivity::class.java)
-            intent.putExtra("url", "https://wwc.lanzouw.com/b09b2hxyh")
-            intent.putExtra("title", "版本更新       密码：123456")
-            startActivity(intent)
-            val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
-            vibrator.vibrate(10)
-        }
+
+//        Title.setOnClickListener {
+//            val intent = Intent(this, MyWebActivity::class.java)
+//            intent.putExtra("url", "https://wwc.lanzouw.com/b09b2hxyh")
+//            intent.putExtra("title", "版本更新       密码：123456")
+//            startActivity(intent)
+//            val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
+//            vibrator.vibrate(10)
+//        }
     }
 
 }
