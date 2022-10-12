@@ -41,14 +41,22 @@ class AboutActivity : BaseActivity() {
 //            val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 //            vibrator.vibrate(10)
 //        }
-       btn1.setOnClickListener{
-          val intent = Intent(this,MyWebActivity::class.java)
-           intent.putExtra("url","http://101.33.239.32:1314/down/km148TlpsTFf")
-           intent.putExtra("title", "京豆小部件——版本更新")
-           startActivity(intent)
+        btn1.setOnClickListener {
+            val intent = Intent(this, MyWebActivity::class.java)
+            intent.putExtra("url", "http://101.33.239.32:1314/down/km148TlpsTFf")
+            intent.putExtra("title", "京豆小部件——版本更新")
+            startActivity(intent)
             val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibrator.vibrate(10)
-       }
+        }
+        lucc.setOnClickListener {
+            val intent = Intent(this, MyWebActivity::class.java)
+            intent.putExtra("url", "lucc.work")
+            intent.putExtra("title", "暂时没想到换什么")
+            startActivity(intent)
+            val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+            vibrator.vibrate(10)
+        }
     }
 
     fun joinQQGroup(key: String): Boolean {

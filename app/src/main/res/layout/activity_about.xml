@@ -133,7 +133,7 @@
                         tools:ignore="HardcodedText,SpUsage" />
 
                     <Button
-
+                        android:id="@+id/lucc"
                         android:layout_width="@dimen/dp_86"
                         android:layout_height="@dimen/dp_20"
                         android:layout_marginStart="@dimen/dp_2"
@@ -338,6 +338,7 @@
                     tools:ignore="HardcodedText,SpUsage" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -352,9 +353,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dp_38"
                     android:layout_gravity="center"
-                    android:gravity="center"
                     android:background="#0000"
                     android:fontFamily="@font/tencent"
+                    android:gravity="center"
                     android:text="更新应用版本"
                     android:textColor="@color/black"
                     android:textSize="17sp" />
