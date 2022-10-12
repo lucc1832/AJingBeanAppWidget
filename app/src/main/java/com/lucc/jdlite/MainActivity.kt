@@ -2,7 +2,6 @@ package com.lucc.jdlite
 
 import android.app.ProgressDialog
 import android.content.Context
-import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
 import android.os.Vibrator
 import android.text.TextUtils
@@ -21,6 +20,7 @@ import com.lucc.jdlite.bean.VersionBean
 import com.lucc.jdlite.dialog.NewStyleDialog
 import com.lucc.jdlite.util.*
 import com.zhy.base.fileprovider.FileProvider7
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.include_title.*
 import java.io.File
 
@@ -66,22 +66,32 @@ class MainActivity : BaseActivity() {
                         Toast.makeText(this@MainActivity, "当前已是最新版本", Toast.LENGTH_SHORT).show()
                     } else {
                         if ("1" == versionBean.isUpdate) {
-                            createDialog("更新日志", versionBean.content, "更新", object : NewStyleDialog.OnRightClickListener {
-                                override fun rightClick() {
-                                    downLoadApk(versionBean.content_url)
-                                }
-                            })
+                            createDialog(
+                                "更新日志",
+                                versionBean.content,
+                                "更新",
+                                object : NewStyleDialog.OnRightClickListener {
+                                    override fun rightClick() {
+                                        downLoadApk(versionBean.content_url)
+                                    }
+                                })
                         } else {
-                            createDialog("更新日志", versionBean.content, "取消", "更新", object : NewStyleDialog.OnLeftClickListener {
-                                override fun leftClick() {
-                                    disMissDialog()
-                                }
-                            }, object : NewStyleDialog.OnRightClickListener {
-                                override fun rightClick() {
-                                    disMissDialog()
-                                    downLoadApk(versionBean.content_url)
-                                }
-                            })
+                            createDialog(
+                                "更新日志",
+                                versionBean.content,
+                                "取消",
+                                "更新",
+                                object : NewStyleDialog.OnLeftClickListener {
+                                    override fun leftClick() {
+                                        disMissDialog()
+                                    }
+                                },
+                                object : NewStyleDialog.OnRightClickListener {
+                                    override fun rightClick() {
+                                        disMissDialog()
+                                        downLoadApk(versionBean.content_url)
+                                    }
+                                })
                         }
                     }
                 } catch (e: Exception) {
@@ -141,7 +151,13 @@ class MainActivity : BaseActivity() {
 
     private fun installApk(file: File) {
         val intent = Intent(Intent.ACTION_VIEW)
-        FileProvider7.setIntentDataAndType(this, intent, "application/vnd.android.package-archive", file, true)
+        FileProvider7.setIntentDataAndType(
+            this,
+            intent,
+            "application/vnd.android.package-archive",
+            file,
+            true
+        )
         startActivity(intent)
     }
 
@@ -150,8 +166,8 @@ class MainActivity : BaseActivity() {
             val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibrator.vibrate(10) //单位是ms
             Intent().also {
-                it.setClass(this,SettingActivity::class.java)
-                overridePendingTransition(R.anim.translate,R.anim.anim_action_main)
+                it.setClass(this, SettingActivity::class.java)
+                overridePendingTransition(R.anim.translate, R.anim.anim_action_main)
                 startActivity(it)
             }
         }
@@ -200,7 +216,14 @@ class MainActivity : BaseActivity() {
             val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
             vibrator.vibrate(10)
         }
+        Title.setOnClickListener {
+            val intent = Intent(this, MyWebActivity::class.java)
+            intent.putExtra("url", "https://wwc.lanzouw.com/b09b2hxyh")
+            intent.putExtra("title", "版本更新       密码：123456")
+            startActivity(intent)
+            val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
+            vibrator.vibrate(10)
+        }
     }
-
 
 }

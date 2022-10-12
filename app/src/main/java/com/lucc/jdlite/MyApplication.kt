@@ -2,8 +2,6 @@ package com.lucc.jdlite
 
 import android.app.Application
 
-
-
 class MyApplication : Application() {
     companion object {
         @JvmStatic
@@ -13,7 +11,7 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         mInstance = this
-
-
     }
+
+
 }

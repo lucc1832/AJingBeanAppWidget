@@ -1,8 +1,11 @@
 package com.lucc.jdlite.activity
 
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.os.Vibrator
 import android.text.TextUtils
+import android.widget.Button
 import android.widget.Toast
 import com.lucc.jdlite.BaseActivity
 import com.lucc.jdlite.R
@@ -11,6 +14,7 @@ import com.lucc.jdlite.dialog.MenuDialog
 import com.lucc.jdlite.util.CacheUtil
 import com.lucc.jdlite.util.UpdateTask
 import kotlinx.android.synthetic.main.activity_setting.*
+
 
 class SettingActivity : BaseActivity() {
     var paddingDataList = ArrayList<String>()
@@ -194,6 +198,5 @@ class SettingActivity : BaseActivity() {
             }
             inputDialog.pop()
         }
-
     }
 }

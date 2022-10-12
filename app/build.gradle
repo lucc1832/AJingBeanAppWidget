@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Android\\KEY\\JingBAPP.jks')
+            storePassword '183264'
+            keyAlias 'JingBAPP'
+            keyPassword '183264'
+        }
+    }
     compileSdk 30
 
     defaultConfig {
@@ -12,17 +20,27 @@ android {
         minSdk 21
         targetSdk 30
         versionCode 10
-        versionName "1.0"
+        versionName "1.1.2"
         vectorDrawables.useSupportLibrary = true
-
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
-
+    // 自定义打包名称
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "京豆.apk"
+            outputFileName = "京豆_${buildType.name}.apk"
+            outputFileName = "京豆_${buildType.name}_v${versionName}.apk"
+            outputFileName = "京豆_${buildType.name}_v${versionName}_${generateTime()}.apk"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
@@ -37,6 +55,10 @@ android {
         abortOnError false
     }
 }
+//构建时间
+static def generateTime() {
+    return new Date().format("yyyy_MM_dd_HH_mm_ss")
+}
 
 dependencies {
 
@@ -48,7 +70,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
+//    implementation 'com.pgyer:analytics:4.2.0'
     implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
     implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
 
@@ -65,8 +87,6 @@ dependencies {
     implementation 'com.liulishuo.filedownloader:library:1.7.7'
 
     implementation 'com.zhy.base:fileprovider:1.0.0'
-
-
 
 
 }

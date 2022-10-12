@@ -338,7 +338,28 @@
                     tools:ignore="HardcodedText,SpUsage" />
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
 
+                android:background="@drawable/neu_background_card_down_bac"
+                android:orientation="vertical"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <TextView
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_38"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="#0000"
+                    android:fontFamily="@font/tencent"
+                    android:text="需要更新的点击首页京东图片进行下载"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

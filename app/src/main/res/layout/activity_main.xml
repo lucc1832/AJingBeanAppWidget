@@ -212,10 +212,10 @@
             android:layout_marginRight="@dimen/dp_25"
             android:layout_marginBottom="@dimen/dp_20"
             android:fontFamily="@font/tencent"
-            android:text="私有签到框架：懒人一键"
+            android:text="私有签到框架：懒人一键签到"
             android:textAlignment="center"
             android:textColor="#546E7A"
-            android:textSize="@dimen/dp_10"
+            android:textSize="@dimen/dp_18"
             tools:ignore="HardcodedText,SpUsage" />
     </RelativeLayout>
 
