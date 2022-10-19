@@ -43,7 +43,7 @@ class AboutActivity : BaseActivity() {
 //        }
         btn1.setOnClickListener {
             val intent = Intent(this, MyWebActivity::class.java)
-            intent.putExtra("url", "http://101.33.239.32:1314/down/km148TlpsTFf")
+            intent.putExtra("url", "http://43.139.94.238:1314/down/S5lpOs7iAgyf")
             intent.putExtra("title", "京豆小部件——版本更新")
             startActivity(intent)
             val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
