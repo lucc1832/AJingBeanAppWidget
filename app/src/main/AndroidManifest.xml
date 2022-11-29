@@ -43,7 +43,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider"
-            android:label="帐号1 4*2">
+            android:label="帐号1 4*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -55,7 +56,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider_2"
-            android:label="帐号1 2*2">
+            android:label="帐号1 2*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -67,7 +69,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider1"
-            android:label="帐号2 4*2">
+            android:label="帐号2 4*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -79,7 +82,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider1_2"
-            android:label="帐号2 2*2">
+            android:label="帐号2 2*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -91,7 +95,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider2"
-            android:label="帐号3 4*2">
+            android:label="帐号3 4*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -103,7 +108,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider2_2"
-            android:label="帐号3 2*2">
+            android:label="帐号3 2*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -115,7 +121,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider3"
-            android:label="帐号4 4*2">
+            android:label="帐号4 4*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -127,7 +134,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider3_2"
-            android:label="帐号4 2*2">
+            android:label="帐号4 2*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -139,7 +147,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider4"
-            android:label="帐号5 4*2">
+            android:label="帐号5 4*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -151,7 +160,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider4_2"
-            android:label="帐号5 2*2">
+            android:label="帐号5 2*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -163,7 +173,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider5"
-            android:label="帐号6 4*2">
+            android:label="帐号6 4*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -175,7 +186,8 @@
 
         <receiver
             android:name="com.lucc.jdlite.widget.MyAppWidgetProvider5_2"
-            android:label="帐号6 2*2">
+            android:label="帐号6 2*2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>

@@ -193,15 +193,20 @@
                         tools:ignore="ContentDescription" />
                 </RelativeLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp_10" />
-
             </LinearLayout>
 
-
         </ScrollView>
-
+        <TextView
+            android:id="@+id/Tv_jiaocheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:fontFamily="@font/tencent"
+            android:text="使用教程"
+            android:textAlignment="center"
+            android:textColor="#546E7A"
+            android:textSize="@dimen/dp_18"
+            tools:ignore="HardcodedText,SpUsage" />
         <TextView
             android:id="@+id/githublj"
             android:layout_width="match_parent"

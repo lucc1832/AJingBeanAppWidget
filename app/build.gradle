@@ -19,8 +19,8 @@ android {
         applicationId "com.lucc.jdlite"
         minSdk 21
         targetSdk 30
-        versionCode 11
-        versionName "1.1.4"
+        versionCode 13
+        versionName "1.1.6"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.release

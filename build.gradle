@@ -3,8 +3,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-//        maven { url "https://frontjs-static.pgyer.com/dist/sdk/pgyersdk" }  //主力仓库
-//        maven { url "https://raw.githubusercontent.com/Pgyer/analytics/master" }  //备用仓库（主力仓库下载不下来使用）
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.4'
