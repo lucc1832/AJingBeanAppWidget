@@ -210,7 +210,7 @@ class MainActivity : BaseActivity() {
         }
         ql.setOnClickListener {
             val intent = Intent(this, MyWebActivity::class.java)
-            intent.putExtra("url", "http://43.139.94.238:5701/")
+            intent.putExtra("url", "http://43.139.94.238")
             intent.putExtra("title", "青龙")
             startActivity(intent)
             val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
