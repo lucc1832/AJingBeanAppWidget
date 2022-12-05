@@ -3,6 +3,7 @@ package com.lucc.jdlite
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Vibrator
 import android.text.TextUtils
 import android.util.Log
@@ -187,8 +188,8 @@ class MainActivity : BaseActivity() {
         }
 
         githublj.setOnClickListener {
-            val intent = Intent(this, MyWebActivity::class.java)
-            intent.putExtra("url", "http://43.139.94.238:1000/register")
+            val uri = Uri.parse("http://lucc.ltd:1000/login")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
             intent.putExtra("title", "签到界面")
             startActivity(intent)
             val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
@@ -209,14 +210,14 @@ class MainActivity : BaseActivity() {
             startActivity(intent)
         }
         ql.setOnClickListener {
-            val intent = Intent(this, MyWebActivity::class.java)
-            intent.putExtra("url", "http://43.139.94.238")
+            val uri = Uri.parse("http://lucc.ltd")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
             intent.putExtra("title", "青龙")
             startActivity(intent)
             val vibrator = this.getSystemService(VIBRATOR_SERVICE) as Vibrator
             vibrator.vibrate(10)
         }
-        Tv_jiaocheng.setOnClickListener{
+        Tv_jiaocheng.setOnClickListener {
             val intent = Intent(this, MyWebActivity::class.java)
             intent.putExtra("url", "https://note.youdao.com/s/6TVf0jzs")
             intent.putExtra("title", "使用教程")
